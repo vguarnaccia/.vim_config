@@ -22,10 +22,15 @@ Vim, obviously, and compiled with python. More requirements to come in the futur
 Plugins
 =======
 
-Custom Shortcuts
-================
+Custom Key Mappings
+===================
 
+Howto Add New Plugin
+====================
 
+::
+
+git clone https://github.com/ctrlpvim/ctrlp.vim ~/.vim_config/plugins
 
 Examples
 ========

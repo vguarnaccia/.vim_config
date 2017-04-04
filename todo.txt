@@ -1,0 +1,2 @@
+- rewrite update script
+- rewrite README
