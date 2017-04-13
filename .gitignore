@@ -1,3 +1,4 @@
 # exclude backup files and experimental configurations
 *.bak
 experimental.vim
+youcompleteme/
