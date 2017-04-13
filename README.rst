@@ -27,6 +27,7 @@ Custom Key Mappings
 
 - `ctrlp.vim <https://github.com/ctrlpvim/ctrlp.vim>`_: Full path fuzzy file, buffer, mru, tag, ... finder for Vim. Open with ``<Ctrl-P>`` and cycle through modes with ``<Ctrl-B>``.
 
+- `fugitive.vim <https://github.com/tpope/vim-fugitive>`_: A Git wrapper so awesome, it should be illegal.
 
 Howto Add New Plugin
 ====================
