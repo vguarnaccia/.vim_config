@@ -17,6 +17,7 @@ from os import path
 # plugin_name https://github.com/user/path.vim
 PLUGINS = """
 ctrlp.vim https://github.com/ctrlpvim/ctrlp.vim
+fugitive.vim https://github.com/tpope/vim-fugitive
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
