@@ -18,6 +18,7 @@ from os import path
 PLUGINS = """
 ctrlp.vim https://github.com/ctrlpvim/ctrlp.vim
 fugitive.vim https://github.com/tpope/vim-fugitive
+vim_airline https://github.com/bling/vim-airline
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
