@@ -25,6 +25,9 @@ Plugins
 Custom Key Mappings
 ===================
 
+- `ctrlp.vim <https://github.com/ctrlpvim/ctrlp.vim>`_: Full path fuzzy file, buffer, mru, tag, ... finder for Vim. Open with ``<Ctrl-P>`` and cycle through modes with ``<Ctrl-B>``.
+
+
 Howto Add New Plugin
 ====================
 
