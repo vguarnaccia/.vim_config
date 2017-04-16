@@ -1,4 +1,6 @@
 # exclude backup files and experimental configurations
 *.bak
 experimental.vim
+# ycm should be install manually
 youcompleteme/
+goyo.vim/doc/tags
