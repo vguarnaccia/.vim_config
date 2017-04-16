@@ -3,4 +3,4 @@
 experimental.vim
 # ycm should be install manually
 youcompleteme/
-goyo.vim/doc/tags
+bundle/goyo\.vim

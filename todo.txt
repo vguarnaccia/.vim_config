@@ -1,2 +1,4 @@
 - rewrite update script
 - rewrite README
+- Add multicursors
+- remap key
