@@ -37,10 +37,10 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => THE NERD TREE
+" => NERDTree Tabs
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeTabsToggle<CR>
 
 " Open NERDTree if no file is specified.
 autocmd StdinReadPre * let s:std_in=1
@@ -72,14 +72,10 @@ let g:syntastic_check_on_wq = 0
 " => Solarized
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
 let g:solarized_termcolors=256
 syntax enable
-set background=light
 colorscheme solarized
-syntax enable
 set background=dark "Try both dark and light
-colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom

@@ -2,3 +2,4 @@
 - rewrite README
 - Add multicursors
 - remap key
+- try different themes in solarized
