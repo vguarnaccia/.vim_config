@@ -2,4 +2,3 @@
 *.bak
 experimental.vim
 # tags consistently change
-bundle/goyo\.vim/doc

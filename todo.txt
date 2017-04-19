@@ -1,5 +1,7 @@
-- rewrite update script
+- rewrite update script to use submodules
 - rewrite README
 - Add multicursors
 - remap key
 - try different themes in solarized
+- get youcompleteme to work
+- fix goyo tags
