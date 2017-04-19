@@ -40,7 +40,7 @@ set laststatus=2
 " => NERDTree Tabs
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-map <C-n> :NERDTreeTabsToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " Open NERDTree if no file is specified.
 autocmd StdinReadPre * let s:std_in=1
@@ -80,6 +80,7 @@ set background=dark "Try both dark and light
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:goyo_width=100
 let g:goyo_margin_top = 2
 let g:goyo_margin_bottom = 2
