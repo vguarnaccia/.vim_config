@@ -5,3 +5,4 @@
 - try different themes in solarized
 - get youcompleteme to work
 - fix goyo tags
+- fix meta key

@@ -2,8 +2,8 @@
 " Pathogen
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-call pathogen#infect('~/.vim_config/bundle/{}')
-call pathogen#helptags()
+execute pathogen#infect()
+execute pathogen#helptags()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => CTRL-P
