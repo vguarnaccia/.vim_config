@@ -3,3 +3,5 @@
 - remap key
 - get youcompleteme to work
 - fix meta key
+git submodule update --init --recursive
+xbuild /p:TargetFrameworkVersion=v4.5
