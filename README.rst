@@ -9,11 +9,14 @@ Kiding aside, I started using vim in just after graduation in June of 2016, so t
 Installation
 ============
 
-To install, simply run the following two commands::
+To install, simply run the following three commands::
 
-  git clone https://github.com/vguarnaccia/vim_config.git
+  git clone https://github.com/vguarnaccia/vim_config.git ~/.vim_config
   sh ~/.vim_config/install.sh
-  
+  git submodule update --init --recursive
+
+This will download all the repositiories and subrepositories. You will have to initialize `YouCompleteMe`_ manually, as the instructions are too complicated for this README.
+
 Requirements
 ============
 
@@ -21,6 +24,10 @@ Vim, obviously, and compiled with python. More requirements to come in the futur
 
 Plugins
 =======
+
+You can add your own by using::
+
+  git submodule add https://github.com/username/MyPlugin.vim.git ~/.vim_config/bundle/MyPlugin.vim
 
 Custom Key Mappings
 ===================
@@ -43,3 +50,5 @@ Acknowledgments
 ===============
 
 Project inspired by github.com/amix/vimrc
+
+.. _YouCompleteMe: https://github.com/Valloric/YouCompleteMe
