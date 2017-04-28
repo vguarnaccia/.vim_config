@@ -1,7 +1,7 @@
 - rewrite README
 - Add multicursors
-- remap key
-- get youcompleteme to work
+- remap keys
 - fix meta key
-git submodule update --init --recursive
-xbuild /p:TargetFrameworkVersion=v4.5
+- Play with NeoComplete configuration
+- Quick toggle of syntastic (sometimes you gotta read other people's code).
+- compare vim_runtime rcs to this.

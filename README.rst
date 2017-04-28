@@ -15,12 +15,10 @@ To install, simply run the following three commands::
   sh ~/.vim_config/install.sh
   git submodule update --init --recursive
 
-This will download all the repositiories and subrepositories. You will have to initialize `YouCompleteMe`_ manually, as the instructions are too complicated for this README.
-
 Requirements
 ============
 
-Vim, obviously, and compiled with python. More requirements to come in the future.
+Vim, obviously, and it must be compiled with python and lua. More requirements to come in the future.
 
 Plugins
 =======
@@ -47,10 +45,10 @@ And update plugins with::
 
   git submodule update --remote
 
-Though make sure that for any plugins with compiled components, such as YouCompleteMe, to recompile their binaries.
-
 Examples
 ========
+
+TODO
 
 Acknowledgments
 ===============
