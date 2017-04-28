@@ -32,16 +32,22 @@ You can add your own by using::
 Custom Key Mappings
 ===================
 
-- `ctrlp.vim <https://github.com/ctrlpvim/ctrlp.vim>`_: Full path fuzzy file, buffer, mru, tag, ... finder for Vim. Open with ``<Ctrl-P>`` and cycle through modes with ``<Ctrl-B>``.
+- `ctrlp.vim`_: Full path fuzzy file, buffer, mru, tag, ... finder for Vim. Open with ``<Ctrl-P>`` and cycle through modes with ``<Ctrl-B>``.
 
-- `fugitive.vim <https://github.com/tpope/vim-fugitive>`_: A Git wrapper so awesome, it should be illegal.
+- `fugitive.vim`_: A Git wrapper so awesome, it should be illegal.
 
 Howto Add New Plugin
 ====================
 
-::
+You can add new pluginds with::
 
-git clone https://github.com/ctrlpvim/ctrlp.vim ~/.vim_config/plugins
+  git submodule add https://github.com/ctrlpvim/ctrlp.vim ~/.vim_config/plugins
+
+And update plugins with::
+
+  git submodule update --remote
+
+Though make sure that for any plugins with compiled components, such as YouCompleteMe, to recompile their binaries.
 
 Examples
 ========
@@ -52,3 +58,5 @@ Acknowledgments
 Project inspired by github.com/amix/vimrc
 
 .. _YouCompleteMe: https://github.com/Valloric/YouCompleteMe
+.. _ctrlp.vim: https://github.com/ctrlpvim/ctrlp.vim
+.. _fugitive.vim: https://github.com/tpope/vim-fugitive
