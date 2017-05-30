@@ -5,3 +5,6 @@
 - Play with NeoComplete configuration
 - Quick toggle of syntastic (sometimes you gotta read other people's code).
 - compare vim_runtime rcs to this.
+- update delimitmate to convert """ to """"""
+- syntastic should not flag more than one space after a comma as an issue.
+- Add module to show whitespace, especially unicode special whitespace
