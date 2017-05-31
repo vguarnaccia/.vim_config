@@ -72,10 +72,11 @@ let g:syntastic_check_on_wq = 0
 " => Solarized
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:solarized_termcolors=256
+set rtp+=~/.vim_config/bundle/vim-colors-solarized
 syntax enable
-colorscheme solarized
+let g:solarized_termcolors=256
 set background=dark "Try both dark and light
+colorscheme solarized
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom
