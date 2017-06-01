@@ -1,43 +1,43 @@
-[submodule "bundle/delimitmate"]
-	path = bundle/delimitmate
+[submodule "included/delimitmate"]
+	path = included/delimitmate
 	url = https://github.com/raimondi/delimitmate
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
+[submodule "included/syntastic"]
+	path = included/syntastic
 	url = https://github.com/vim-syntastic/syntastic
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
+[submodule "included/tagbar"]
+	path = included/tagbar
 	url = https://github.com/majutsushi/tagbar
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+[submodule "included/vim-airline"]
+	path = included/vim-airline
 	url = https://github.com/bling/vim-airline
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
+[submodule "included/vim-colors-solarized"]
+	path = included/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
-[submodule "bundle/vim-commentary"]
-	path = bundle/vim-commentary
+[submodule "included/vim-commentary"]
+	path = included/vim-commentary
 	url = https://github.com/tpope/vim-commentary
-[submodule "bundle/vim-zenroom2"]
-	path = bundle/vim-zenroom2
+[submodule "included/vim-zenroom2"]
+	path = included/vim-zenroom2
 	url = https://github.com/amix/vim-zenroom2
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
+[submodule "included/ctrlp.vim"]
+	path = included/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+[submodule "included/vim-fugitive"]
+	path = included/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "bundle/vim-gitgutter"]
-	path = bundle/vim-gitgutter
+[submodule "included/vim-gitgutter"]
+	path = included/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+[submodule "included/nerdtree"]
+	path = included/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/goyo.vim"]
-	path = bundle/goyo.vim
+[submodule "included/goyo.vim"]
+	path = included/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
 	ignore = dirty
-[submodule "bundle/neocomplete.vim"]
-	path = bundle/neocomplete.vim
+[submodule "included/neocomplete.vim"]
+	path = included/neocomplete.vim
 	url = https://github.com/Shougo/neocomplete.vim.git
-[submodule "bundle/deoplete.nvim"]
-	path = bundle/deoplete.nvim
+[submodule "included/deoplete.nvim"]
+	path = included/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim.git

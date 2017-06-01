@@ -18,7 +18,7 @@ To install, simply run the following three commands::
 Requirements
 ============
 
-Vim, obviously, and it must be compiled with python and lua. More requirements to come in the future. It works best with `neovim`_ (make sure to remember ``pip install neovim``)
+Vim, obviously, and it must be compiled with python and lua. More requirements to come in the future. It works best with `neovim`_ (make sure to remember ``pip install neovim``).
 
 Plugins
 =======
@@ -31,8 +31,8 @@ You can add your own by using::
 Custom Key Mappings
 ===================
 
+- `deoplete`_: Light autocomplete, set to use tabcompletion. More completers availible through `omnifunc`_ plugins.
 - `ctrlp.vim`_: Full path fuzzy file, buffer, mru, tag, ... finder for Vim. Open with ``<Ctrl-P>`` and cycle through modes with ``<Ctrl-B>``.
-
 - `fugitive.vim`_: A Git wrapper so awesome, it should be illegal.
 
 Howto Add New Plugin
@@ -56,7 +56,9 @@ Acknowledgments
 
 Project inspired by github.com/amix/vimrc
 
+.. _deoplete: https://github.com/Shougo/deoplete.nvim
 .. _YouCompleteMe: https://github.com/Valloric/YouCompleteMe
 .. _ctrlp.vim: https://github.com/ctrlpvim/ctrlp.vim
 .. _fugitive.vim: https://github.com/tpope/vim-fugitive
 .. _neovim: https://neovim.io/
+.. _omnifunc: https://github.com/Shougo/deoplete.nvim/wiki/Completion-Sources
