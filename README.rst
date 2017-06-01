@@ -26,10 +26,7 @@ Plugins
 You can add your own by using::
 
   git submodule add https://github.com/username/MyPlugin.vim.git ~/.vim_config/bundle/MyPlugin.vim
-
-Update your plugins with::
-
-  git submodule update --merge --recursive --remote
+  git submodule update --init --recursive
 
 Custom Key Mappings
 ===================
