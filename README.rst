@@ -18,7 +18,7 @@ To install, simply run the following three commands::
 Requirements
 ============
 
-Vim, obviously, and it must be compiled with python and lua. More requirements to come in the future.
+Vim, obviously, and it must be compiled with python and lua. More requirements to come in the future. It works best with `neovim`_ (make sure to remember ``pip install neovim``)
 
 Plugins
 =======
@@ -26,6 +26,10 @@ Plugins
 You can add your own by using::
 
   git submodule add https://github.com/username/MyPlugin.vim.git ~/.vim_config/bundle/MyPlugin.vim
+
+Update your plugins with::
+
+  git submodule update --init --recursive
 
 Custom Key Mappings
 ===================
@@ -58,3 +62,4 @@ Project inspired by github.com/amix/vimrc
 .. _YouCompleteMe: https://github.com/Valloric/YouCompleteMe
 .. _ctrlp.vim: https://github.com/ctrlpvim/ctrlp.vim
 .. _fugitive.vim: https://github.com/tpope/vim-fugitive
+.. _neovim: https://neovim.io/
