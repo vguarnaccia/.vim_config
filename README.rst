@@ -13,7 +13,8 @@ To install, simply run the following three commands::
 
   git clone https://github.com/vguarnaccia/vim_config.git ~/.vim_config
   sh ~/.vim_config/install.sh
-  git submodule update --init --recursive
+
+To uninstall, simple delete ``.vim_config/`` and remove the relevant lines from your ``.vimrc/``.
 
 Requirements
 ============
