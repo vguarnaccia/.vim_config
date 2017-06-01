@@ -29,7 +29,7 @@ You can add your own by using::
 
 Update your plugins with::
 
-  git submodule update --init --recursive
+  git submodule update --merge --recursive --remote
 
 Custom Key Mappings
 ===================
@@ -47,7 +47,7 @@ You can add new pluginds with::
 
 And update plugins with::
 
-  git submodule update --remote
+  git submodule update --merge --recursive --remote
 
 Examples
 ========
