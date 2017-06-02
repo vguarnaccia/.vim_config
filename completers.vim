@@ -4,13 +4,12 @@ if has('nvim')
     " deoplete
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-    " Disable AutoComplPop.
     " Use deoplete.
     let g:deoplete#enable_at_startup = 1
+    " Enable Logging
+    " call deoplete#enable_logging('Debug', 'deoplete.log') 
     " Use smartcase.
     let g:deoplete#enable_smart_case = 1
-    " Set minimum syntax keyword length.
-    let g:deoplete#sources#syntax#min_keyword_length = 3
 
     " Define dictionary.
     let g:deoplete#sources#dictionary#dictionaries = {
@@ -46,7 +45,7 @@ if has('nvim')
     "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 
     " AutoComplPop like behavior.
-    "let g:deoplete#enable_auto_select = 1
+    let g:deoplete#enable_auto_select = 1
 
     " Shell like behavior(not recommended).
     "set completeopt+=longest
@@ -65,13 +64,20 @@ if has('nvim')
     if !exists('g:deoplete#sources#omni#input_patterns')
       let g:deoplete#sources#omni#input_patterns = {}
     endif
-    "let g:deoplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-    "let g:deoplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-    "let g:deoplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+    let g:deoplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+    let g:deoplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+    let g:deoplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
     " For perlomni.vim setting.
     " https://github.com/c9s/perlomni.vim
     let g:deoplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " deoplete-jedi
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+    let g:deoplete#sources#jedi#show_docstring = 1
+    let g:deoplete#sources#jedi#debug_server = 1
 
 else
 

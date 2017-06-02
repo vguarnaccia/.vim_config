@@ -16,6 +16,10 @@ To install, simply run the following three commands::
 
 To uninstall, simple delete ``.vim_config/`` and remove the relevant lines from your ``.vimrc/``.
 
+And update repo with::
+
+  cd ~/.vim_config/ && git pull && git submodule update --merge --recursive --remote
+
 Requirements
 ============
 
@@ -39,13 +43,9 @@ Custom Key Mappings
 Howto Add New Plugin
 ====================
 
-You can add new pluginds with::
+You can add your own plugins with::
 
-  git submodule add https://github.com/ctrlpvim/ctrlp.vim ~/.vim_config/plugins
-
-And update plugins with::
-
-  git submodule update --merge --recursive --remote
+  git clone https://github.com/ctrlpvim/ctrlp.vim ~/.vim_config/plugins
 
 Examples
 ========
