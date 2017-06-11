@@ -38,3 +38,6 @@
 [submodule "included/deoplete.nvim"]
 	path = included/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "included/neovim-colors-solarized-truecolor-only"]
+	path = included/neovim-colors-solarized-truecolor-only
+	url = https://github.com/frankier/neovim-colors-solarized-truecolor-only
