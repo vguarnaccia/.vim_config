@@ -74,7 +74,7 @@ let g:syntastic_check_on_wq = 0
 
 if has('nvim')
     syntax enable
-    let g:solarized_termcolors=256
+    set termguicolors
     set background=dark "Try both dark and light
     colorscheme solarized
 end
