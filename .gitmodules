@@ -10,9 +10,6 @@
 [submodule "included/vim-airline"]
 	path = included/vim-airline
 	url = https://github.com/bling/vim-airline
-[submodule "included/vim-colors-solarized"]
-	path = included/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "included/vim-commentary"]
 	path = included/vim-commentary
 	url = https://github.com/tpope/vim-commentary
