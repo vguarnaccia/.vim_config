@@ -1,6 +1,3 @@
-[submodule "included/syntastic"]
-	path = included/syntastic
-	url = https://github.com/vim-syntastic/syntastic
 [submodule "included/tagbar"]
 	path = included/tagbar
 	url = https://github.com/majutsushi/tagbar
