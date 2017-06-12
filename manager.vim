@@ -16,7 +16,13 @@ set runtimepath+=~/.vim_config/dein.vim
 if dein#load_state(expand('~/.vim_config/included/'))
 
     " Source Local Plugins
-    source ./local_plugins.vim
+    try
+        call dein#begin(expand('~/.vim_config/local/'))
+        call dein#add('~/.vim_config/dein.vim')
+        source ~/.vim_config/local_plugins.vim
+        call dein#end()
+    catch
+    endtry
 
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     " Included Plugins
@@ -56,11 +62,11 @@ endif
 " Source Configurations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-source ./included_plugins.vim
-source ./default.vim
-source ./completers.vim
+source ~/.vim_config/included_plugins.vim
+source ~/.vim_config/default.vim
+source ~/.vim_config/completers.vim
 
 try
-    source ~/.vim_config/experimental.vim
+    source ~/.vim_config/local_config.vim
     catch
 endtry

@@ -1,5 +1,5 @@
 # exclude backup files and experimental configurations
 *.bak
 experimental.vim
-local/
+local*
 included/
