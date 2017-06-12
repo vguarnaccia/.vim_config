@@ -7,7 +7,7 @@ if has('nvim')
     " Use deoplete.
     let g:deoplete#enable_at_startup = 1
     " Enable Logging
-    " call deoplete#enable_logging('Debug', 'deoplete.log') 
+    " call deoplete#enable_logging('Debug', 'deoplete.log')
     " Use smartcase.
     let g:deoplete#enable_smart_case = 1
 

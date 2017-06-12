@@ -16,9 +16,6 @@ To install, simply run the following three commands::
 
 To uninstall, simple delete ``.vim_config/`` and remove the relevant lines from your ``.vimrc/``.
 
-And update repo with::
-
-  cd ~/.vim_config/ && git pull && git submodule update --merge --recursive --remote
 
 Requirements
 ============
@@ -43,9 +40,16 @@ Custom Key Mappings
 Howto Add New Plugin
 ====================
 
-You can add your own plugins with::
+You can add your own plugins using dein.vim in the file ``local_plugins.vim``.
 
-  git clone https://github.com/ctrlpvim/ctrlp.vim ~/.vim_config/plugins
+Example::
+
+    " Add or remove your plugins here:
+    " You can specify revision/branch/tag.
+    call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+    call dein#add('sebastianmarkow/deoplete-rust')
+
+    " Required:
 
 Examples
 ========
