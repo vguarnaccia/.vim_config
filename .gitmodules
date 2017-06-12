@@ -1,6 +1,3 @@
-[submodule "included/vim-commentary"]
-	path = included/vim-commentary
-	url = https://github.com/tpope/vim-commentary
 [submodule "included/vim-zenroom2"]
 	path = included/vim-zenroom2
 	url = https://github.com/amix/vim-zenroom2
