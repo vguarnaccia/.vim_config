@@ -22,9 +22,6 @@
 [submodule "included/nerdtree"]
 	path = included/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "included/neocomplete.vim"]
-	path = included/neocomplete.vim
-	url = https://github.com/Shougo/neocomplete.vim.git
 [submodule "included/neovim-colors-solarized-truecolor-only"]
 	path = included/neovim-colors-solarized-truecolor-only
 	url = https://github.com/frankier/neovim-colors-solarized-truecolor-only
