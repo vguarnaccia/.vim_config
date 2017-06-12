@@ -1,6 +1,3 @@
-[submodule "included/tagbar"]
-	path = included/tagbar
-	url = https://github.com/majutsushi/tagbar
 [submodule "included/vim-airline"]
 	path = included/vim-airline
 	url = https://github.com/bling/vim-airline
