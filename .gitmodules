@@ -22,10 +22,6 @@
 [submodule "included/nerdtree"]
 	path = included/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "included/goyo.vim"]
-	path = included/goyo.vim
-	url = https://github.com/junegunn/goyo.vim
-	ignore = dirty
 [submodule "included/neocomplete.vim"]
 	path = included/neocomplete.vim
 	url = https://github.com/Shougo/neocomplete.vim.git
