@@ -16,9 +16,6 @@ To install, simply run the following three commands::
 
 To uninstall, simple delete ``.vim_config/`` and remove the relevant lines from your ``.vimrc/``.
 
-And update repo with::
-
-  cd ~/.vim_config/ && git pull && git submodule update --merge --recursive --remote
 
 Requirements
 ============
