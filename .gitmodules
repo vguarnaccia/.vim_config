@@ -19,6 +19,3 @@
 [submodule "included/vim-gitgutter"]
 	path = included/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-[submodule "included/nerdtree"]
-	path = included/nerdtree
-	url = https://github.com/scrooloose/nerdtree
