@@ -22,6 +22,3 @@
 [submodule "included/nerdtree"]
 	path = included/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "included/neovim-colors-solarized-truecolor-only"]
-	path = included/neovim-colors-solarized-truecolor-only
-	url = https://github.com/frankier/neovim-colors-solarized-truecolor-only
