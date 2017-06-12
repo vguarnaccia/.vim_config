@@ -1,6 +1,3 @@
 [submodule "included/vim-zenroom2"]
 	path = included/vim-zenroom2
 	url = https://github.com/amix/vim-zenroom2
-[submodule "included/vim-gitgutter"]
-	path = included/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter
