@@ -9,40 +9,18 @@ endif
 set runtimepath+=~/.vim_config
 set runtimepath+=~/.vim_config/dein.vim
 
-source ~/.vim_config/plugins_config.vim
-source ~/.vim_config/default.vim
-source ~/.vim_config/completers.vim
-
-try
-    source ~/.vim_config/experimental.vim
-    catch
-endtry
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Dein Plugin Manager
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if dein#load_state(expand('~/.vim_config/included/'))
-    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " Local Plugs
-    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " Required:
-    call dein#begin(expand('~/.vim_config/local/'))
 
-    " Let dein manage dein
-    call dein#add('~/.vim_config/dein.vim')
-    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " Add or remove your plugins here:
-    " You can specify revision/branch/tag.
-    " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
-
-    call dein#add('sebastianmarkow/deoplete-rust')
-    call dein#add('zchee/deoplete-clang')
-    call dein#add('zchee/deoplete-jedi')
-
-    " Required:
-    call dein#end()
+    " Source Local Plugins
+    source ./local_plugins.vim
 
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " Included plugins
+    " Included Plugins
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
     call dein#begin(expand('~/.vim_config/included/'))
     call dein#add('~/.vim_config/dein.vim')
 
@@ -73,3 +51,16 @@ syntax enable
 if dein#check_install()
  call dein#install()
 endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Source Configurations
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+source ./included_plugins.vim
+source ./default.vim
+source ./completers.vim
+
+try
+    source ~/.vim_config/experimental.vim
+    catch
+endtry
