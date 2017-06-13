@@ -22,20 +22,13 @@ Requirements
 
 Vim, obviously, and it must be compiled with python and lua. More requirements to come in the future. It works best with `neovim`_ (make sure to remember ``pip install neovim``).
 
-Plugins
-=======
-
-You can add your own by using::
-
-  git submodule add https://github.com/username/MyPlugin.vim.git ~/.vim_config/bundle/MyPlugin.vim
-  git submodule update --init --recursive
-
 Custom Key Mappings
 ===================
 
 - `deoplete`_: Light autocomplete, set to use tabcompletion. More completers availible through `omnifunc`_ plugins. You can cycle through options with ``<tab>``.
 - `ctrlp.vim`_: Full path fuzzy file, buffer, mru, tag, ... finder for Vim. Open with ``<Ctrl-P>`` and cycle through modes with ``<Ctrl-B>``.
 - `fugitive.vim`_: A Git wrapper so awesome, it should be illegal.
+- TODO: extend this list.
 
 Howto Add New Plugin
 ====================
