@@ -8,7 +8,6 @@
 
 nnoremap ga :Git add %:p<CR><CR>
 nnoremap gs :Gstatus<CR>
-nnoremap gc :Gcommit<CR>
 nnoremap gd :Gdiff<CR>
 nnoremap ge :Gedit<CR>
 nnoremap gre :Gread<CR>
