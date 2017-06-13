@@ -33,7 +33,7 @@ You can add your own by using::
 Custom Key Mappings
 ===================
 
-- `deoplete`_: Light autocomplete, set to use tabcompletion. More completers availible through `omnifunc`_ plugins.
+- `deoplete`_: Light autocomplete, set to use tabcompletion. More completers availible through `omnifunc`_ plugins. You can cycle through options with ``<tab>``.
 - `ctrlp.vim`_: Full path fuzzy file, buffer, mru, tag, ... finder for Vim. Open with ``<Ctrl-P>`` and cycle through modes with ``<Ctrl-B>``.
 - `fugitive.vim`_: A Git wrapper so awesome, it should be illegal.
 
