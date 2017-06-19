@@ -39,7 +39,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " => Tagbar
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-nmap <F8> :TagbarToggle<CR>
+nmap <C-m> :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Tagbar
@@ -68,6 +68,7 @@ syntax enable
 set termguicolors
 set background=dark "Try both dark and light
 colorscheme solarized
+call togglebg#map("<F8>")
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom
