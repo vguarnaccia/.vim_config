@@ -111,6 +111,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+" Unless .html, then 1 tab  == 2 spaces
+autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 " Linebreak on 500 characters
 set lbr
 set tw=500
