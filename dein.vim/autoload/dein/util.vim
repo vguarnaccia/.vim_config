@@ -235,8 +235,18 @@ function! dein#util#_save_cache(vimrcs, is_state, is_starting) abort
 endfunction
 function! dein#util#_check_vimrcs() abort
   let time = getftime(dein#util#_get_runtime_path())
-  return !empty(filter(map(copy(g:dein#_vimrcs), 'getftime(expand(v:val))'),
+  let ret = !empty(filter(map(copy(g:dein#_vimrcs), 'getftime(expand(v:val))'),
         \ 'time < v:val'))
+  if ret
+    call dein#clear_state()
+
+    if [string(g:dein#_cache_version)] +
+          \ sort(map(values(g:dein#_plugins), 'v:val.repo'))
+          \ !=# dein#util#_load_merged_plugins()
+      call dein#recache_runtimepath()
+    endif
+  endif
+  return ret
 endfunction
 function! dein#util#_load_merged_plugins() abort
   let path = dein#util#_get_cache_path() . '/merged'
@@ -381,6 +391,12 @@ function! dein#util#_begin(path, vimrcs) abort
     call dein#util#_error('Invalid runtimepath.')
     return 1
   endif
+  if fnamemodify(a:path, ':t') ==# 'plugin'
+        \ && index(rtps, fnamemodify(a:path, ':h')) >= 0
+    call dein#util#_error('You must not set the installation directory'
+          \ .' under "&runtimepath/plugin"')
+    return 1
+  endif
   call insert(rtps, g:dein#_runtime_path, idx - 1)
   call dein#util#_add_after(rtps, g:dein#_runtime_path.'/after')
   let &runtimepath = dein#util#_join_rtp(rtps,
@@ -421,13 +437,7 @@ function! dein#util#_end() abort
   endfor
   let &runtimepath = dein#util#_join_rtp(rtps, &runtimepath, '')
 
-  if dein#util#_check_vimrcs()
-    if [string(g:dein#_cache_version)] +
-          \ sort(map(values(g:dein#_plugins), 'v:val.repo'))
-          \ !=# dein#util#_load_merged_plugins()
-      call dein#recache_runtimepath()
-    endif
-  endif
+  call dein#util#_check_vimrcs()
 
   if !empty(depends)
     call dein#source(depends)
